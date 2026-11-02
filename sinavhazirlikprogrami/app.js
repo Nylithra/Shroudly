@@ -34,6 +34,11 @@
     u.qs.forEach(function (q, qi) { q.id = u.id + "-" + qi; q.unit = ui; QMAP[q.id] = q; });
   });
   D.yazili.forEach(function (q, i) { q.id = "y-" + i; QMAP[q.id] = q; });
+  // v2: eski sürümde "Yanlış" cevaplı D/Y soruları hatalı puanlanıyordu; haksız eklenen hataları temizle
+  if (!S.fixTf) {
+    S.mistakes = S.mistakes.filter(function (id) { var q = QMAP[id]; return q && !(q.t === "tf" && q.a === false); });
+    S.fixTf = 1; save();
+  }
 
   /* ───────── yardımcılar ───────── */
   var $app = document.getElementById("app");
@@ -233,7 +238,7 @@
   /* çoktan seçmeli / doğru-yanlış */
   function questionView(q) {
     var opts;
-    if (q.t === "tf") opts = [{ txt: "Doğru", val: true }, { txt: "Yanlış", val: false }];
+    if (q.t === "tf") opts = [{ txt: "Doğru", val: q.a === true }, { txt: "Yanlış", val: q.a === false }];
     else opts = shuffle(q.o.map(function (o, i) { return { txt: o, val: i === q.a }; }));
     var sel = -1;
     var again = L.seen[q.id] ? '<span class="kicker" style="color:var(--bad)">Tekrar deneyelim</span>' : '<span class="kicker">' + (q.t === "tf" ? "Doğru mu, yanlış mı?" : "Doğru cevabı seç") + "</span>";

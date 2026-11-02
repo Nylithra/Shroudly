@@ -14,7 +14,7 @@ window.SINAV = {
   senaryo: "Senaryo 4",
   dagilim: [
     { kod: "BİY.10.1.1", konu: "Canlılık için enerjinin önemi, ATP'nin yapısı ve enerji aktarımındaki rolü", soru: 3 },
-    { kod: "BİY.10.1.3", konu: "Fotosentez: ışığa bağımlı / bağımsız tepkimeler, hızı etkileyen faktörler, deneyler", soru: 2 }
+    { kod: "BİY.10.1.3", konu: "Fotosentez: ışığın kullanıldığı ve kullanılmadığı tepkimeler, hızı etkileyen faktörler, deneyler", soru: 2 }
   ],
   units: [
     /* ─────────── 0: SINAVIN KENDİ SENARYOLARI (önce bunu çalış) ─────────── */
@@ -47,7 +47,7 @@ window.SINAV = {
         { t: "tf", q: "Canlı bir ateş böceğinin ışığı sönmez, çünkü hücreleri besinlerden sürekli yeni ATP üretir.", a: true, e: "ADP + P, hücresel solunumdan gelen enerjiyle tekrar ATP'ye dönüştürülür (ATP döngüsü)." },
         { t: "mc", q: "Ateş böceğinin ışık saçmasında gerçekleşen enerji dönüşümü hangisidir?", o: ["Kimyasal enerji → ışık enerjisi", "Işık enerjisi → kimyasal enerji", "Isı enerjisi → ışık enerjisi", "Işık enerjisi → ısı enerjisi"], a: 0, e: "ATP'deki kimyasal enerji ışığa dönüşür: biyolüminesans." },
         { t: "mc", q: "Işıkta bekletilen su bitkisinden çıkan gaz tüpte toplanıyor. Bu gazın oksijen olduğu nasıl kanıtlanır?", o: ["Közlenmiş tahta kıymık yaklaştırılınca alevlenir", "Kireç suyunu bulandırır", "İyotla mavi-mor renk verir", "Bromtimol mavisini sarıya çevirir"], a: 0, e: "Oksijen yanmayı destekler; közlenmiş kıymık alevlenir. Kireç suyu ise CO₂ testidir." },
-        { t: "mc", q: "Su bitkisi karanlığa alındığında kabarcık çıkışının durması neyi gösterir?", o: ["Fotosentez için ışığın gerekli olduğunu", "Fotosentez için CO₂'nin gerekli olduğunu", "Bitkinin solunumu durdurduğunu", "Suyun bittiğini"], a: 0, e: "Işık yoksa ışığa bağımlı tepkimeler ve O₂ üretimi durur." },
+        { t: "mc", q: "Su bitkisi karanlığa alındığında kabarcık çıkışının durması neyi gösterir?", o: ["Fotosentez için ışığın gerekli olduğunu", "Fotosentez için CO₂'nin gerekli olduğunu", "Bitkinin solunumu durdurduğunu", "Suyun bittiğini"], a: 0, e: "Işık yoksa ışığın kullanıldığı tepkimeler ve O₂ üretimi durur." },
         { t: "tf", q: "Karanlıkta bekletilen bir bitki solunum yapmaya devam eder ve ortama CO₂ verir.", a: true, e: "Solunum gece-gündüz sürer; karanlıkta sadece fotosentez durur. Bu yüzden ortamdaki kireç suyu bulanır." },
         { t: "mc", q: "Farklı miktarda karbonat (NaHCO₃) eklenen sulara aynı su bitkisi konuyor ve kabarcıklar sayılıyor. Bu deneyde hangisi SABİT tutulmalıdır?", o: ["Işık şiddeti ve sıcaklık", "CO₂ miktarı", "Kabarcık sayısı", "Karbonat miktarı"], a: 0, e: "CO₂ (karbonat) miktarı bağımsız, kabarcık sayısı bağımlı değişkendir. Işık ve sıcaklık sabit tutulur." },
         { t: "mc", q: "Bir hücrede ATP üretimi tamamen durursa aşağıdakilerden hangisi DEVAM EDER?", o: ["Oksijenin difüzyonla hücreye girmesi", "Kas kasılması", "Protein sentezi", "Na⁺-K⁺ pompasının çalışması"], a: 0, e: "Difüzyon ATP gerektirmez. Diğerleri ATP olmadan durur." }
@@ -120,7 +120,7 @@ window.SINAV = {
         { h: "ATP üretiminin 3 yolu",
           b: "<table class='tbl'><tr><th>Yol</th><th>Nerede?</th></tr><tr><td><b>Substrat düzeyinde fosforilasyon</b></td><td>Sitoplazma (glikoliz, fermantasyon) ve mitokondri matriksi. <b>Bütün canlılarda</b> görülür.</td></tr><tr><td><b>Oksidatif fosforilasyon</b></td><td>Mitokondri iç zarı (krista), elektron taşıma sistemi. Prokaryotlarda hücre zarında.</td></tr><tr><td><b>Fotofosforilasyon</b></td><td>Kloroplastın <b>tilakoid zarı</b>, ışık enerjisiyle. Fotosentez yapan prokaryotlarda zar kıvrımlarında.</td></tr></table>" },
         { h: "ATP HARCANAN olaylar",
-          b: "• <b>Aktif taşıma</b> (Na⁺-K⁺ pompası)<br>• <b>Endositoz</b> (fagositoz, pinositoz) ve <b>ekzositoz</b><br>• <b>Kas kasılması</b>, sil ve kamçı hareketi<br>• <b>Dehidrasyon sentezi</b>: protein, glikojen, nişasta, yağ, DNA sentezi<br>• <b>Hücre bölünmesi</b>, DNA eşlenmesi<br>• <b>Sinir impulsunun iletimi</b><br>• <b>Biyolüminesans</b> (ateş böceğinin ışık saçması)<br>• Fotosentezin <b>ışıktan bağımsız evresi</b>" },
+          b: "• <b>Aktif taşıma</b> (Na⁺-K⁺ pompası)<br>• <b>Endositoz</b> (fagositoz, pinositoz) ve <b>ekzositoz</b><br>• <b>Kas kasılması</b>, sil ve kamçı hareketi<br>• <b>Dehidrasyon sentezi</b>: protein, glikojen, nişasta, yağ, DNA sentezi<br>• <b>Hücre bölünmesi</b>, DNA eşlenmesi<br>• <b>Sinir impulsunun iletimi</b><br>• <b>Biyolüminesans</b> (ateş böceğinin ışık saçması)<br>• Fotosentezin <b>ışığın kullanılmadığı evresi</b>" },
         { h: "ATP HARCANMAYAN olaylar",
           b: "• <b>Difüzyon</b> ve <b>kolaylaştırılmış difüzyon</b><br>• <b>Osmoz</b>, plazmoliz, deplazmoliz<br>• <b>Hidroliz</b> tepkimeleri (ör. hücre dışı sindirim)<br>• Gaz değişimi (akciğerde O₂ - CO₂ difüzyonu)<br><br>Kısa kural: madde <b>yoğunluk farkına göre kendiliğinden</b> hareket ediyorsa ATP gerekmez. <b>Yoğunluğa karşı</b> ya da <b>sentez/hareket</b> varsa ATP gerekir." },
         { h: "ATP döngüsü",
@@ -149,7 +149,7 @@ window.SINAV = {
         { h: "Fotosentez denklemi",
           b: "<div class='eq'>6CO₂ + 12H₂O <span>—ışık, klorofil, enzim→</span> C₆H₁₂O₆ + 6O₂ + 6H₂O</div><b>Kullanılanlar:</b> karbondioksit, su, ışık enerjisi.<br><b>Üretilenler:</b> glikoz, oksijen, su.<br>Işık enerjisi → <b>kimyasal bağ enerjisi</b>ne dönüşür." },
         { h: "Kloroplastın yapısı",
-          b: "• <b>Çift zar</b> (dış zar + iç zar)<br>• <b>Tilakoid</b>: üst üste dizilince <b>granum</b> oluşur. Klorofil buradadır → <b>ışığa bağımlı</b> tepkimeler.<br>• <b>Stroma</b>: sıvı kısım; enzimler, kendi <b>DNA</b>, <b>RNA</b> ve <b>ribozomu</b> bulunur → <b>ışıktan bağımsız</b> tepkimeler.<br>Prokaryot fotosentetiklerde (siyanobakteri) kloroplast yoktur; klorofil <b>hücre zarı kıvrımlarında</b> bulunur." },
+          b: "• <b>Çift zar</b> (dış zar + iç zar)<br>• <b>Tilakoid</b>: üst üste dizilince <b>granum</b> oluşur. Klorofil buradadır → <b>ışığın kullanıldığı</b> tepkimeler.<br>• <b>Stroma</b>: sıvı kısım; enzimler, kendi <b>DNA</b>, <b>RNA</b> ve <b>ribozomu</b> bulunur → <b>ışığın kullanılmadığı</b> tepkimeler.<br>Prokaryot fotosentetiklerde (siyanobakteri) kloroplast yoktur; klorofil <b>hücre zarı kıvrımlarında</b> bulunur." },
         { h: "Pigmentler",
           b: "<b>Klorofil a ve b</b>: mor-mavi ve kırmızı ışığı soğurur, <b>yeşili yansıtır</b>. Bu yüzden yaprak yeşil görünür.<br>Klorofilin merkezinde <b>magnezyum (Mg)</b>, yapısında <b>azot (N)</b> bulunur. Klorofil sentezi için <b>demir (Fe)</b> gerekir.<br><b>Karotenoitler</b> (sarı-turuncu): ışığı soğurup klorofile aktarır, klorofili korur. Sonbaharda klorofil yıkılınca görünür hale gelir." },
         { h: "Glikoz ne olur?",
@@ -172,7 +172,7 @@ window.SINAV = {
     /* ───────────────────────── 5 ───────────────────────── */
     {
       id: "fs-isik",
-      title: "Işığa bağımlı tepkimeler",
+      title: "Işığın kullanıldığı tepkimeler",
       kod: "BİY.10.1.3",
       cards: [
         { h: "Nerede, ne olur?",
@@ -180,17 +180,17 @@ window.SINAV = {
         { h: "Oksijen nereden gelir?",
           b: "Fotosentezde açığa çıkan <b>O₂'nin kaynağı SUDUR</b>, CO₂ değildir.<br>Kanıt: İşaretli oksijen (¹⁸O) içeren <b>su</b> verilen bitkide açığa çıkan O₂ işaretli çıkar. İşaretli <b>CO₂</b> verilince O₂ işaretli çıkmaz; işaret glikoz ve suda görülür." },
         { h: "Girdiler ve çıktılar",
-          b: "<table class='tbl'><tr><th>Kullanılan</th><th>Üretilen</th></tr><tr><td>Işık, H₂O, ADP + P, NADP⁺</td><td><b>ATP, NADPH, O₂</b></td></tr></table>ATP ve NADPH <b>stromaya</b> geçer ve ışıktan bağımsız tepkimelerde kullanılır.<br>Bu evrede <b>CO₂ kullanılmaz</b>, glikoz üretilmez." }
+          b: "<table class='tbl'><tr><th>Kullanılan</th><th>Üretilen</th></tr><tr><td>Işık, H₂O, ADP + P, NADP⁺</td><td><b>ATP, NADPH, O₂</b></td></tr></table>ATP ve NADPH <b>stromaya</b> geçer ve ışığın kullanılmadığı tepkimelerde kullanılır.<br>Bu evrede <b>CO₂ kullanılmaz</b>, glikoz üretilmez." }
       ],
       qs: [
-        { t: "mc", q: "Işığa bağımlı tepkimeler kloroplastın neresinde gerçekleşir?", o: ["Tilakoid zarında", "Stromada", "Dış zar ile iç zar arasında", "Sitoplazmada"], a: 0, e: "Pigmentler ve elektron taşıma sistemi tilakoid zarındadır." },
+        { t: "mc", q: "Işığın kullanıldığı tepkimeler kloroplastın neresinde gerçekleşir?", o: ["Tilakoid zarında", "Stromada", "Dış zar ile iç zar arasında", "Sitoplazmada"], a: 0, e: "Pigmentler ve elektron taşıma sistemi tilakoid zarındadır." },
         { t: "mc", q: "Fotosentezde açığa çıkan oksijenin kaynağı hangisidir?", o: ["Su", "Karbondioksit", "Glikoz", "Klorofil"], a: 0, e: "Suyun fotolizi sonucunda O₂ açığa çıkar." },
-        { t: "mc", q: "Işığa bağımlı tepkimelerin ürünleri hangileridir?", o: ["ATP, NADPH ve O₂", "Glikoz ve O₂", "CO₂ ve H₂O", "ADP ve NADP⁺"], a: 0, e: "ATP ve NADPH stromaya geçer, O₂ dışarı verilir." },
-        { t: "tf", q: "Işığa bağımlı tepkimelerde CO₂ kullanılarak glikoz üretilir.", a: false, e: "CO₂ ışıktan bağımsız tepkimelerde (stromada) kullanılır." },
+        { t: "mc", q: "Işığın kullanıldığı tepkimelerin ürünleri hangileridir?", o: ["ATP, NADPH ve O₂", "Glikoz ve O₂", "CO₂ ve H₂O", "ADP ve NADP⁺"], a: 0, e: "ATP ve NADPH stromaya geçer, O₂ dışarı verilir." },
+        { t: "tf", q: "Işığın kullanıldığı tepkimelerde CO₂ kullanılarak glikoz üretilir.", a: false, e: "CO₂ ışığın kullanılmadığı tepkimelerde (stromada) kullanılır." },
         { t: "tf", q: "Suyun ışık enerjisiyle parçalanmasına fotoliz denir.", a: true, e: "2H₂O → 4H⁺ + 4e⁻ + O₂" },
         { t: "mc", q: "Bir bitkiye oksijeni işaretli (¹⁸O) su verilirse işaretli oksijen ilk olarak hangi üründe görülür?", o: ["Atmosfere verilen O₂'de", "Glikozda", "CO₂'de", "Nişastada"], a: 0, e: "Su fotolizle parçalanır ve oksijeni O₂ gazı olarak açığa çıkar." },
-        { t: "mc", q: "Işığa bağımlı tepkimelerde ATP üretim şekli hangisidir?", o: ["Fotofosforilasyon", "Oksidatif fosforilasyon", "Substrat düzeyinde fosforilasyon", "Hidroliz"], a: 0, e: "Işık enerjisiyle ATP üretilmesine fotofosforilasyon denir." },
-        { t: "tf", q: "Işığa bağımlı tepkimelerde üretilen NADPH, ışıktan bağımsız tepkimelerde hidrojen kaynağı olarak kullanılır.", a: true, e: "NADPH, CO₂'nin glikoza indirgenmesi için gereken hidrojen ve elektronu taşır." },
+        { t: "mc", q: "Işığın kullanıldığı tepkimelerde ATP üretim şekli hangisidir?", o: ["Fotofosforilasyon", "Oksidatif fosforilasyon", "Substrat düzeyinde fosforilasyon", "Hidroliz"], a: 0, e: "Işık enerjisiyle ATP üretilmesine fotofosforilasyon denir." },
+        { t: "tf", q: "Işığın kullanıldığı tepkimelerde üretilen NADPH, ışığın kullanılmadığı tepkimelerde hidrojen kaynağı olarak kullanılır.", a: true, e: "NADPH, CO₂'nin glikoza indirgenmesi için gereken hidrojen ve elektronu taşır." },
         { t: "mc", q: "Bir bitki karanlığa alındığında ilk olarak hangisinin üretimi durur?", o: ["O₂ ve ATP (ışık evresi)", "Glikoz", "CO₂", "Selüloz"], a: 0, e: "Işık olmayınca önce ışık evresi durur. ATP ve NADPH bitince glikoz üretimi de durur." }
       ]
     },
@@ -198,24 +198,24 @@ window.SINAV = {
     /* ───────────────────────── 6 ───────────────────────── */
     {
       id: "fs-calvin",
-      title: "Işıktan bağımsız tepkimeler",
+      title: "Işığın kullanılmadığı tepkimeler",
       kod: "BİY.10.1.3",
       cards: [
         { h: "Calvin döngüsü",
           b: "<b>Yer:</b> stroma.<br>1. <b>CO₂ tutulur</b> (karbon fiksasyonu): atmosferden alınan CO₂, 5 karbonlu bir bileşiğe (RuBP) bağlanır.<br>2. Işık evresinden gelen <b>ATP</b> ve <b>NADPH</b> kullanılarak bileşikler indirgenir.<br>3. <b>Glikoz</b> (ve diğer organik maddeler) oluşur.<br>4. Başlangıç bileşiği yeniden yapılır; döngü sürer." },
-        { h: "Neden 'ışıktan bağımsız'?",
+        { h: "Neden 'ışığın kullanılmadığı' tepkimeler?",
           b: "Bu tepkimeler ışığı <b>doğrudan</b> kullanmaz; karanlıkta da birkaç saniye devam edebilir.<br>Ama ışık evresinin ürünleri olan <b>ATP ve NADPH</b>'ye bağımlıdır. Bu yüzden <b>dolaylı olarak ışığa bağlıdır</b>: uzun süre karanlıkta durur.<br>Enzimlerle yürüdüğü için <b>sıcaklıktan</b> çok etkilenir." },
         { h: "İki evreyi karşılaştır",
-          b: "<table class='tbl'><tr><th></th><th>Işığa bağımlı</th><th>Işıktan bağımsız</th></tr><tr><td>Yer</td><td>Tilakoid</td><td>Stroma</td></tr><tr><td>Kullanılan</td><td>Işık, H₂O, ADP, NADP⁺</td><td>CO₂, ATP, NADPH</td></tr><tr><td>Üretilen</td><td>O₂, ATP, NADPH</td><td>Glikoz, ADP, NADP⁺</td></tr><tr><td>ATP</td><td>Üretilir</td><td>Harcanır</td></tr><tr><td>Etkili faktör</td><td>Işık</td><td>Sıcaklık, CO₂</td></tr></table>" }
+          b: "<table class='tbl'><tr><th></th><th>Işığın kullanıldığı</th><th>Işığın kullanılmadığı</th></tr><tr><td>Yer</td><td>Tilakoid</td><td>Stroma</td></tr><tr><td>Kullanılan</td><td>Işık, H₂O, ADP, NADP⁺</td><td>CO₂, ATP, NADPH</td></tr><tr><td>Üretilen</td><td>O₂, ATP, NADPH</td><td>Glikoz, ADP, NADP⁺</td></tr><tr><td>ATP</td><td>Üretilir</td><td>Harcanır</td></tr><tr><td>Etkili faktör</td><td>Işık</td><td>Sıcaklık, CO₂</td></tr></table>" }
       ],
       qs: [
-        { t: "mc", q: "Işıktan bağımsız tepkimeler kloroplastın neresinde gerçekleşir?", o: ["Stromada", "Tilakoid zarında", "Granumda", "Dış zarda"], a: 0, e: "Calvin döngüsünün enzimleri stromadadır." },
-        { t: "mc", q: "Işıktan bağımsız tepkimelerde aşağıdakilerden hangisi kullanılmaz?", o: ["O₂", "CO₂", "ATP", "NADPH"], a: 0, e: "O₂ ışık evresinin ürünüdür; Calvin döngüsünde kullanılmaz." },
-        { t: "tf", q: "Işıktan bağımsız tepkimelerde ATP üretilir.", a: false, e: "Bu evrede ATP harcanır. ATP ışık evresinde üretilir." },
+        { t: "mc", q: "Işığın kullanılmadığı tepkimeler kloroplastın neresinde gerçekleşir?", o: ["Stromada", "Tilakoid zarında", "Granumda", "Dış zarda"], a: 0, e: "Calvin döngüsünün enzimleri stromadadır." },
+        { t: "mc", q: "Işığın kullanılmadığı tepkimelerde aşağıdakilerden hangisi kullanılmaz?", o: ["O₂", "CO₂", "ATP", "NADPH"], a: 0, e: "O₂ ışık evresinin ürünüdür; Calvin döngüsünde kullanılmaz." },
+        { t: "tf", q: "Işığın kullanılmadığı tepkimelerde ATP üretilir.", a: false, e: "Bu evrede ATP harcanır. ATP ışık evresinde üretilir." },
         { t: "mc", q: "CO₂'nin organik moleküle bağlanmasına ne ad verilir?", o: ["Karbon fiksasyonu (CO₂ tutulması)", "Fotoliz", "Fotofosforilasyon", "Hidroliz"], a: 0, e: "Atmosferdeki inorganik karbon organik bileşiğe bağlanır." },
-        { t: "tf", q: "Işıktan bağımsız tepkimeler ışığı doğrudan kullanmaz ama ışık evresinin ürünlerine ihtiyaç duyduğu için uzun süre karanlıkta devam edemez.", a: true, e: "ATP ve NADPH tükenince Calvin döngüsü durur." },
-        { t: "mc", q: "Sıcaklık değişiminden en çok etkilenen fotosentez evresi hangisidir?", o: ["Işıktan bağımsız tepkimeler", "Işığın soğurulması", "Suyun fotolizi", "Hepsi eşit etkilenir"], a: 0, e: "Calvin döngüsü tamamen enzimatiktir; enzimler sıcaklığa duyarlıdır." },
-        { t: "mc", q: "Işıktan bağımsız tepkimelerin ürünleri hangileridir?", o: ["Glikoz, ADP + P ve NADP⁺", "ATP ve NADPH", "O₂ ve ATP", "CO₂ ve H₂O"], a: 0, e: "ADP ve NADP⁺ tekrar ışık evresine döner." },
+        { t: "tf", q: "Işığın kullanılmadığı tepkimeler ışığı doğrudan kullanmaz ama ışık evresinin ürünlerine ihtiyaç duyduğu için uzun süre karanlıkta devam edemez.", a: true, e: "ATP ve NADPH tükenince Calvin döngüsü durur." },
+        { t: "mc", q: "Sıcaklık değişiminden en çok etkilenen fotosentez evresi hangisidir?", o: ["Işığın kullanılmadığı tepkimeler", "Işığın soğurulması", "Suyun fotolizi", "Hepsi eşit etkilenir"], a: 0, e: "Calvin döngüsü tamamen enzimatiktir; enzimler sıcaklığa duyarlıdır." },
+        { t: "mc", q: "Işığın kullanılmadığı tepkimelerin ürünleri hangileridir?", o: ["Glikoz, ADP + P ve NADP⁺", "ATP ve NADPH", "O₂ ve ATP", "CO₂ ve H₂O"], a: 0, e: "ADP ve NADP⁺ tekrar ışık evresine döner." },
         { t: "mc", q: "Işıkta fotosentez yapan bir bitkinin ortamındaki CO₂ aniden kesilirse önce ne olur?", o: ["Glikoz üretimi durur, ATP ve NADPH stromada birikir", "O₂ üretimi artar", "Suyun fotolizi hızlanır", "Klorofil yıkılır"], a: 0, e: "CO₂ yoksa Calvin döngüsü çalışmaz. ATP ve NADPH harcanamaz, birikir. Bir süre sonra ışık evresi de yavaşlar." }
       ]
     },
@@ -297,7 +297,7 @@ window.SINAV = {
       a: "Durur (ATP gerektirir): aktif taşıma (Na⁺-K⁺ pompası), kas kasılması, protein ve glikojen sentezi, hücre bölünmesi, sinir impulsu iletimi, endositoz ve ekzositoz.\nDevam eder (ATP gerektirmez): difüzyon, osmoz, kolaylaştırılmış difüzyon.\nSonuç: Hücre madde taşıyamaz, sentez ve onarım yapamaz, yaşamsal olaylar sürdürülemez ve hücre ölür.",
       k: ["aktif taşıma", "kas kasılması", "sentez", "difüzyon", "osmoz", "ölür"] },
     { t: "open", kod: "BİY.10.1.3", q: "SENARYO: Bir su bitkisi su dolu bir behere konup üzerine ters çevrilmiş huni ve su dolu deney tüpü yerleştiriliyor. Düzenek ışıkta bekletildiğinde tüpte gaz birikiyor, karanlıkta bekletildiğinde birikmiyor.\na) Tüpte biriken gaz hangisidir, nasıl kanıtlanır?\nb) Bu gaz hangi maddeden kaynaklanır?\nc) Deneyden çıkarılacak sonuç nedir?",
-      a: "a) Biriken gaz oksijendir (O₂). Tüpteki gaza közlenmiş (alevi söndürülmüş) tahta kıymık yaklaştırıldığında kıymık alevlenir; bu, gazın oksijen olduğunu kanıtlar.\nb) Oksijenin kaynağı sudur. Işığa bağımlı tepkimelerde su ışık enerjisiyle parçalanır (fotoliz): 2H₂O → 4H⁺ + 4e⁻ + O₂.\nc) Fotosentez için ışık gereklidir ve fotosentezde oksijen üretilir. Karanlıkta fotosentez gerçekleşmediği için gaz birikmez.",
+      a: "a) Biriken gaz oksijendir (O₂). Tüpteki gaza közlenmiş (alevi söndürülmüş) tahta kıymık yaklaştırıldığında kıymık alevlenir; bu, gazın oksijen olduğunu kanıtlar.\nb) Oksijenin kaynağı sudur. Işığın kullanıldığı tepkimelerde su ışık enerjisiyle parçalanır (fotoliz): 2H₂O → 4H⁺ + 4e⁻ + O₂.\nc) Fotosentez için ışık gereklidir ve fotosentezde oksijen üretilir. Karanlıkta fotosentez gerçekleşmediği için gaz birikmez.",
       k: ["oksijen", "közlenmiş", "alevlenir", "su", "fotoliz", "ışık gerekli"] },
     { t: "open", kod: "BİY.10.1.3", q: "SENARYO: Biyoloji kulübü, karbondioksit miktarının fotosentez hızına etkisini araştırıyor. Aynı tür ve büyüklükte su bitkilerini farklı miktarda karbonat (NaHCO₃) içeren sulara koyup lambayla aydınlatıyorlar.\na) Hipotez yazınız.\nb) Bağımsız, bağımlı ve kontrol edilen değişkenleri yazınız.\nc) Fotosentezde kullanılan ve üretilen maddeleri, bunları kanıtlamak için kullanılabilecek testlerle birlikte yazınız.",
       a: "a) Hipotez: Ortamdaki CO₂ miktarı arttıkça fotosentez hızı (belirli bir noktaya kadar) artar.\nb) Bağımsız değişken: CO₂ (karbonat) miktarı. Bağımlı değişken: Birim zamanda çıkan O₂ kabarcığı sayısı. Kontrol edilen değişkenler: Işık şiddeti (lamba uzaklığı), sıcaklık, bitki türü ve büyüklüğü, su miktarı, süre.\nc) Kullanılanlar: CO₂ ve su (ışık enerjisi ve klorofil gerekir). CO₂ tüketimi, sarı bromtimol mavisinin maviye dönmesiyle ya da kireç suyunun bulanmamasıyla gösterilir.\nÜretilenler: Glikoz ve O₂. O₂, közlenmiş kıymığın alevlenmesiyle; glikozun depo hali olan nişasta, yaprağa iyot damlatılınca oluşan mavi-mor renkle gösterilir.",
@@ -323,8 +323,8 @@ window.SINAV = {
     { t: "open", kod: "BİY.10.1.3", q: "Fotosentezin genel denklemini yazınız. Kullanılan ve üretilen maddeleri ayrı ayrı belirtiniz.",
       a: "6CO₂ + 12H₂O → (ışık, klorofil, enzim) → C₆H₁₂O₆ + 6O₂ + 6H₂O\nKullanılan: karbondioksit, su (ve ışık enerjisi).\nÜretilen: glikoz, oksijen, su.\nIşık enerjisi, glikozun kimyasal bağ enerjisine dönüştürülür.",
       k: ["6CO₂", "12H₂O", "C₆H₁₂O₆", "6O₂", "ışık", "klorofil"] },
-    { t: "open", kod: "BİY.10.1.3", q: "Fotosentezin ışığa bağımlı ve ışıktan bağımsız tepkimelerini; gerçekleştiği yer, kullanılan ve üretilen maddeler bakımından karşılaştırınız.",
-      a: "Işığa bağımlı: Tilakoid zarında gerçekleşir. Işık, su, ADP + P ve NADP⁺ kullanılır. Suyun fotolizi olur; O₂, ATP ve NADPH üretilir.\nIşıktan bağımsız (Calvin döngüsü): Stromada gerçekleşir. CO₂, ATP ve NADPH kullanılır. Glikoz üretilir; ADP, P ve NADP⁺ tekrar ışık evresine döner. Enzimatik olduğu için sıcaklıktan çok etkilenir.",
+    { t: "open", kod: "BİY.10.1.3", q: "Fotosentezin ışığın kullanıldığı ve ışığın kullanılmadığı tepkimelerini; gerçekleştiği yer, kullanılan ve üretilen maddeler bakımından karşılaştırınız.",
+      a: "Işığın kullanıldığı: Tilakoid zarında gerçekleşir. Işık, su, ADP + P ve NADP⁺ kullanılır. Suyun fotolizi olur; O₂, ATP ve NADPH üretilir.\nIşığın kullanılmadığı (Calvin döngüsü): Stromada gerçekleşir. CO₂, ATP ve NADPH kullanılır. Glikoz üretilir; ADP, P ve NADP⁺ tekrar ışık evresine döner. Enzimatik olduğu için sıcaklıktan çok etkilenir.",
       k: ["tilakoid", "stroma", "fotoliz", "O₂", "ATP", "NADPH", "CO₂", "glikoz"] },
     { t: "open", kod: "BİY.10.1.3", q: "Fotosentezde açığa çıkan oksijenin sudan mı karbondioksitten mi geldiğini gösteren bir deney tasarlayınız.",
       a: "Aynı tür iki bitki kullanılır. 1. bitkiye oksijeni işaretli (¹⁸O) su ve normal CO₂, 2. bitkiye normal su ve oksijeni işaretli CO₂ verilir. Diğer koşullar (ışık, sıcaklık, süre) sabit tutulur. Açığa çıkan O₂ incelenir. Sadece 1. bitkide işaretli O₂ görülür; 2. bitkide işaret glikozda ve suda görülür. Sonuç: Fotosentezde açığa çıkan O₂'nin kaynağı sudur (suyun fotolizi).",
@@ -342,7 +342,7 @@ window.SINAV = {
       a: "Engelmann, ipliksi bir alge prizmadan geçirilmiş ışık verdi; böylece algin farklı bölgeleri farklı renkte ışık aldı. Ortama oksijen seven (aerobik) bakteriler ekledi. Bakteriler en çok mor-mavi ve kırmızı ışık alan bölgelerde, en az yeşil ışık alan bölgede toplandı. Yorum: Bu ışıklarda fotosentez hızı ve O₂ üretimi en fazladır; klorofil en çok mor-mavi ve kırmızı ışığı soğurur.",
       k: ["prizma", "alg", "aerobik bakteri", "mavi", "kırmızı", "yeşil", "O₂"] },
     { t: "open", kod: "BİY.10.1.3", q: "Toprağında magnezyum ve azot eksik olan bir bitkide görülecek değişiklikleri ve bunun fotosentez hızına etkisini açıklayınız.",
-      a: "Magnezyum klorofilin merkez atomudur, azot da klorofilin yapısında bulunur. Bu mineraller eksik olursa klorofil sentezlenemez, yapraklar sararır (kloroz). Işığı soğuracak pigment azaldığı için ışığa bağımlı tepkimeler yavaşlar, ATP ve NADPH azalır ve fotosentez hızı düşer. Azot eksikliği ayrıca enzim (protein) sentezini de azaltır.",
+      a: "Magnezyum klorofilin merkez atomudur, azot da klorofilin yapısında bulunur. Bu mineraller eksik olursa klorofil sentezlenemez, yapraklar sararır (kloroz). Işığı soğuracak pigment azaldığı için ışığın kullanıldığı tepkimeler yavaşlar, ATP ve NADPH azalır ve fotosentez hızı düşer. Azot eksikliği ayrıca enzim (protein) sentezini de azaltır.",
       k: ["magnezyum", "azot", "klorofil", "sararır", "kloroz", "hız düşer"] }
   ]
 };
