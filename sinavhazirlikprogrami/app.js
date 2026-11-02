@@ -107,15 +107,15 @@
     var nextIdx = D.units.findIndex(function (u) { return !S.best[u.id]; });
     var hi = S.name ? "Selam " + esc(S.name) + "!" : "Yarınki yazılıya hazır mısın?";
     var h = topbar() +
-      '<section class="hello"><h1>' + hi + "</h1><p>8 kısa ders, yazılı provası ve deneme sınavı. Sırayla git, her ders 3-4 dakika.</p></section>" +
+      '<section class="hello"><h1>' + hi + "</h1><p>9 kısa ders, yazılı provası ve deneme sınavı. Sırayla git, her ders 3-4 dakika.</p></section>" +
       '<section class="exam"><span class="eyebrow">' + esc(D.sinav) + " · " + esc(D.senaryo) + "</span>" +
       "<h2>Sınavda 5 soru var</h2><ul>" +
       D.dagilim.map(function (d) { return "<li><b>" + d.soru + " soru</b><span>" + esc(d.konu) + "</span></li>"; }).join("") +
       '</ul><div class="meter"><div class="meter-row"><span>Hazırlık</span><span>%' + r + '</span></div><div class="bar"><i style="width:' + r + '%"></i></div></div></section>';
 
-    var groups = [["BİY.10.1.1", "ATP ve enerji"], ["BİY.10.1.3", "Fotosentez"]];
+    var groups = [["SENARYO", "Önce bunu çalış"], ["BİY.10.1.1", "ATP ve enerji"], ["BİY.10.1.3", "Fotosentez"]];
     groups.forEach(function (g) {
-      h += '<h2 class="section-h">' + g[1] + " · " + g[0] + '</h2><div class="path">';
+      h += '<h2 class="section-h">' + g[1] + (g[0] === "SENARYO" ? " · sınavın senaryoları" : " · " + g[0]) + '</h2><div class="path">';
       D.units.forEach(function (u, i) {
         if (u.kod !== g[0]) return;
         var b = S.best[u.id] || 0, st = stars(b);
@@ -170,11 +170,11 @@
   function startDeneme() {
     var pool = [];
     D.units.forEach(function (u) { pool = pool.concat(u.qs); });
-    var atp = shuffle(pool.filter(function (q) { return D.units[q.unit].kod === "BİY.10.1.1"; })).slice(0, 7);
-    var fs = shuffle(pool.filter(function (q) { return D.units[q.unit].kod === "BİY.10.1.3"; })).slice(0, 8);
-    var yz = shuffle(D.yazili.filter(function (q) { return q.kod === "BİY.10.1.1"; })).slice(0, 2)
-      .concat(shuffle(D.yazili.filter(function (q) { return q.kod === "BİY.10.1.3"; })).slice(0, 1));
-    L = { kind: "deneme", title: "Deneme sınavı", cards: [], cardIdx: 0, queue: shuffle(atp.concat(fs)).concat(yz), total: 18, done: 0,
+    var atp = shuffle(pool.filter(function (q) { return D.units[q.unit].kod === "BİY.10.1.1"; })).slice(0, 5);
+    var fs = shuffle(pool.filter(function (q) { return D.units[q.unit].kod === "BİY.10.1.3"; })).slice(0, 6);
+    var sc = shuffle(pool.filter(function (q) { return D.units[q.unit].kod === "SENARYO"; })).slice(0, 4);
+    var yz = shuffle(D.yazili.slice(0, 5)).slice(0, 2).concat(shuffle(D.yazili.slice(5)).slice(0, 1));
+    L = { kind: "deneme", title: "Deneme sınavı", cards: [], cardIdx: 0, queue: shuffle(atp.concat(fs, sc)).concat(yz), total: 18, done: 0,
       hearts: Infinity, correctFirst: 0, seen: {}, wrongs: [], xp: 0, noRequeue: true, score: 0 };
     lessonView();
   }

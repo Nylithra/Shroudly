@@ -141,7 +141,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 .l-body { flex: 1; display: grid; align-content: start; gap: 16px; padding-block: 8px 24px; }
 .kicker { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--leaf); }
-.q { font-family: var(--display); font-size: 19px; line-height: 1.35; font-weight: 600; letter-spacing: -.01em; }
+.q { white-space: pre-line; font-family: var(--display); font-size: 19px; line-height: 1.35; font-weight: 600; letter-spacing: -.01em; }
 .q u { text-decoration-color: var(--bad); text-decoration-thickness: 3px; }
 
 .opts { display: grid; gap: 10px; }

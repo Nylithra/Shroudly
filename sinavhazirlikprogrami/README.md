@@ -9,9 +9,9 @@ Giriş gerektirmez, mobil uyumludur. İlerleme her kullanıcının kendi tarayı
 | BİY.10.1.3 | Fotosentez: ışığa bağımlı/bağımsız tepkimeler, faktörler, deneyler | 2 |
 
 ## İçerik
-- 8 ders: önce bilgi kartları, sonra test soruları (çoktan seçmeli + doğru/yanlış, açıklamalı)
+- 9 ders (ilki sınav senaryoları: ateş böceği ATP deneyi, su bitkisi O₂ deneyi, biyoloji kulübü testleri): önce bilgi kartları, sonra test soruları (çoktan seçmeli + doğru/yanlış, açıklamalı)
 - 5 can, XP, günlük seri, yanlış soruların sona eklenmesi
-- **Yazılı provası:** 14 açık uçlu soru, örnek tam puan cevabı ve anahtar kavram kontrolü
+- **Yazılı provası:** 19 açık uçlu soru, örnek tam puan cevabı ve anahtar kavram kontrolü
 - **Deneme sınavı:** 15 test + 3 yazılı, puanlı
 - **Hatalarım:** yanlış yapılan sorular
 - **Özet:** sınav öncesi son tekrar için tüm kartlar tek sayfada
